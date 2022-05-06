@@ -1,0 +1,8 @@
+{
+    "text overlap": 1,
+    "component occlusion": 2,
+    "missing image": 3,
+    "null value": 4
+    "blurred screen": 5
+
+}
