@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>OwlEyes</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/static/img/favicon.png" rel="icon">
+    <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.loli.net/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+            rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/vendor/cropper/css/cropper.min.css"/>
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/vendor/sitelogo/js/sitelogo.js">
+    <link rel="stylesheet" href="/static/vendor/sweetalert/sweetalert2.css">
+
+
+    <!-- Template Main CSS File -->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/magnific-popup.css" rel="stylesheet">
+    <link href="/static/css/owl.carousel.css" rel="stylesheet">
+    <link href="/static/css/owl.theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+        <div class="logo float-left">
+            <a href="/" class="scrollto float-left"><img data-original="/static/img/logo.png" alt=""
+                                                              class="img-fluid"></a>
+            <h1 class="text-light float-left"><a href="#header"><span></span></a></h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#about">Details</a></li>
+                <li><a class="nav-link scrollto" href="#Demo">Demonstration</a></li>
+                <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="/">Back To Main Page</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- #header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+        <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img data-original="/static/img/hero-img.svg" alt="" class="img-fluid lazyload">
+        </div>
+
+        <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+            <h2>We provide<br><span>solutions</span><br>for your <span>GUI testing</span>!</h2>
+            <div>
+                <a href="#about" class="btn-get-started scrollto">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Hero Section -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+                <h3>What's OwlEyes?</h3>
+                <p>UI display issues such as text overlap, missing image always occur during GUI rendering on difference
+                    devices due to the software or hardware compatibility. They negatively influence the app usability,
+                    resulting in poor user experience. To detect these issues, we provide the OwlEyes, based on deep
+                    learning for
+                    modelling visual information of the GUI screenshot. OwlEyes can detect GUIs with display issues and
+                    also
+                    locate the detailed region of the issue in the given GUI for guiding developers to fix the bug.
+                </p>
+                <p>OwlEyes is named as our tool is like the owl's eyes to effectively spot UI display issues. And our
+                    tool
+                    (nocturnal like owl) can complement with conventional automated GUI testing (diurnal like eagle) for
+                    ensuring the robustness of the UI.</p>
+            </header>
+
+            <div class="row screenshot">
+                <div class="col-md-12 col-lg-12" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <h4 class="title">Some Screenshots With UI Display Issues</h4>
+                        <div id="exTab1" data-aos="zoom-in" data-aos-delay="100" class="container">
+                            <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-Component-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-Component" type="button" role="tab"
+                                            aria-controls="pills-Component"
+                                            aria-selected="true">Component occlusion
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Missing-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-Missing" type="button" role="tab"
+                                            aria-controls="pills-Missing"
+                                            aria-selected="false">Missing image
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Null-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-Null"
+                                            type="button" role="tab" aria-controls="pills-Null" aria-selected="false">
+                                        Null Value
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Text-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-Text"
+                                            type="button" role="tab" aria-controls="pills-Text" aria-selected="false">
+                                        Text overlap
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Blurred-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-Blurred" type="button" role="tab"
+                                            aria-controls="pills-Blurred"
+                                            aria-selected="false">Blurred screen
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane owl fade show active" id="pills-Component" role="tabpanel"
+                                     aria-labelledby="pills-Component-tab">
+                                    <div class="col-md-12 col-sm-12 content-illustration">
+                                        <p>Textual information or component is occluded by other components.</p>
+                                    </div>
+                                    <div data-aos="zoom-in" data-aos-delay="100" id="owl1"
+                                         class="owl-one owl-carousel owl-theme">
+                                        {% for n in range(1,9) %}
+                                            <div class="item col-md-3 col-sm-3 example-buggy">
+                                                <img data-original="/static/img/bug-comp/{{ n }}.png"
+                                                     class="img-responsive buggy"
+                                                     bug="/static/img/bug-comp/{{ n }}.png" alt="Image not found!">
+                                                <div class="screenshot-info">
+                                                    <div>
+                                                        <div href="portfolio-details.html" class="link-details"
+                                                             title="More Details"><i
+                                                                class="bi bi-search"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade owl" id="pills-Missing" role="tabpanel"
+                                     aria-labelledby="pills-Missing-tab">
+                                    <div class="col-md-12 col-sm-12 content-illustration">
+                                        <p>In the icon position, the image is not showing as its design.</p>
+                                    </div>
+                                    <div id="owl2" class="owl-one owl-carousel owl-theme">
+                                        {% for n in range(1,10) %}
+                                            <div class="item col-md-3 col-sm-3 example-buggy">
+                                                <img data-original="/static/img/bug-img/{{ n }}.jpg"
+                                                     bug="/static/img/bug-img/{{ n }}.jpg" class="img-responsive buggy"
+                                                     alt="Image not found!">
+                                                <div class="screenshot-info">
+                                                    <div>
+                                                        <div href="portfolio-details.html" class="link-details"
+                                                             title="More Details"><i
+                                                                class="bi bi-search"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade owl" id="pills-Null" role="tabpanel"
+                                     aria-labelledby="pills-Null-tab">
+                                    <div class="col-md-12 col-sm-12 content-illustration">
+                                        <p>The right information is not displaying, instead NULL is showing in
+                                            corresponding area.</p>
+                                    </div>
+                                    <div id="owl3" class="owl-one owl-carousel owl-theme">
+                                        {% for n in range(1,9) %}
+                                            <div class="item col-md-3 col-sm-3 example-buggy">
+                                                <img data-original="/static/img/bug-null/{{ n }}.jpg"
+                                                     class="img-responsive buggy"
+                                                     alt="Image not found!"
+                                                     bug="/static/img/bug-null/{{ n }}-Grad-CAM.jpg">
+                                                <div class="screenshot-info">
+                                                    <div>
+                                                        <div href="portfolio-details.html" class="link-details"
+                                                             title="More Details"><i
+                                                                class="bi bi-search"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade owl" id="pills-Text" role="tabpanel"
+                                     aria-labelledby="pills-Text-tab">
+                                    <div class="col-md-12 col-sm-12 content-illustration">
+                                        <p>Pieces of text are overlapped with each other.</p>
+                                    </div>
+                                    <div id="owl4" class="owl-one owl-carousel owl-theme">
+                                        {% for n in range(1,10) %}
+                                            <div class="item col-md-3 col-sm-3 example-buggy">
+                                                <img data-original="/static/img/bug-text/{{ n }}.png"
+                                                     class="img-responsive buggy"
+                                                     alt="Image not found!"
+                                                     bug="/static/img/bug-text/{{ n }}-Grad-CAM.png">
+                                                <div class="screenshot-info">
+                                                    <div>
+                                                        <div href="portfolio-details.html" class="link-details"
+                                                             title="More Details"><i
+                                                                class="bi bi-search"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade owl" id="pills-Blurred" role="tabpanel"
+                                     aria-labelledby="pills-Blurred-tab">
+                                    <div class="col-md-12 col-sm-12 content-illustration">
+                                        <p>The screen is blurred.</p>
+                                    </div>
+                                    <div id="owl5" class="owl-one owl-carousel owl-theme">
+                                        {% for n in range(1,10) %}
+                                            <div class="item col-md-3 col-sm-3 example-buggy">
+                                                <img data-original="/static/img/bug-screen/{{ n }}.jpg"
+                                                     class="img-responsive buggy" alt="Image not found!"
+                                                     bug="/static/img/bug-screen/{{ n }}-Grad-CAM.jpg">
+                                                <div class="screenshot-info">
+                                                    <div>
+                                                        <div href="portfolio-details.html" class="link-details"
+                                                             title="More Details"><i
+                                                                class="bi bi-search"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row about-container">
+
+                <div class="col-lg-7 content order-lg-1 order-2">
+                    <h4>
+                        OwlEyes is capable of...
+                    </h4>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bi bi-calendar4-range"></i></div>
+                        <h4 class="title"><a href="">Running an app online</a></h4>
+                        <p class="description">Users only need to provide APK download link or APK file.<br><br>
+                        </p>
+                    </div>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bi bi-card-image"></i></div>
+                        <h4 class="title"><a href="">Collecting screenshots</a></h4>
+                        <p class="description">OwlEyes can automatically run the application and get the run-time
+                            GUI
+                            screenshot.</p>
+                    </div>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="bi bi-journal-check"></i></div>
+                        <h4 class="title"><a href="">UI display issues detection
+                        </a></h4>
+                        <p class="description">OwlEyes can automatically detect whether there is an issue in the
+                            screenshot.
+                        </p>
+                    </div>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="bi bi-pin-angle"></i></div>
+                        <h4 class="title"><a href="">UI display issues localization
+                        </a></h4>
+                        <p class="description">OwlEyes can localize the regions with UI display issues in the
+                            screenshots for
+                            guiding developers to fix the bug.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 background order-lg-2" data-aos="zoom-in">
+                    <img data-original="/static/img/about-img.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="row about-container" style="
+        margin-top: 20px;">
+                <div class="col-lg-12 background order-lg-2" data-aos="zoom-in">
+                    <img data-original="/static/img/overview 2.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="row about-container">
+                <div class="col-lg-5" data-aos="fade-right" style="
+          text-align: center;">
+                    <img data-original="/static/img/detection.png" class="img-fluid" style="
+          width: 90%;" alt="">
+                    <img style="
+          margin-top: 20px;" data-original="/static/img/localization 2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-7 content pt-5 pt-lg-0" data-aos="fade-left">
+                    <h4>Details about our method</h4>
+                    <p class="description-method">
+                        We proposes OwlEyes to automatically detect and localize UI display issues in the screenshots of
+                        the
+                        application under test. Given one APK or UI screenshot, our tools will automatically run the
+                        application
+                        and get its UI screenshots. Then our CNN-based model can first classify if it relates with any
+                        display
+                        issues via the visual understanding. Once the issue is confirmed, our model can further localize
+                        the
+                        detailed issue position on the UI screenshot by Grad CAM-based model for guiding developers to
+                        fix the
+                        bug.
+                    </p>
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bi bi-phone"></i></div>
+                        <h4 class="title"><a href="">Automatically get UI screenshots
+                        </a></h4>
+                        <p class="description">We use dynamic analysis tools to automatically explore applications and
+                            get UI
+                            screenshots.
+                        </p>
+                    </div>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="bi bi-images"></i></div>
+                        <h4 class="title"><a href="">CNN-based Issues Detection
+                        </a></h4>
+                        <p class="description">We adopt the convolution neural network, including 12 convolutional
+                            layers, 6
+                            pooling layers and 4 fully connection layers. </p>
+                    </div>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="bi bi-geo"></i></div>
+                        <h4 class="title"><a href="">Grad CAM-based Issues Localization
+                        </a></h4>
+                        <p class="description">We adopt the visualization method of CNN.</p>
+                        <div id="branch" class="fade-up" data-wow-delay="0.4s"
+                             style="visibility: visible;animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <ul>
+                                <li>
+                                    <p><span class="bullet"></span>
+                                        <span class="list-title">produce a localization map of the important regions</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><span class="bullet"></span>
+                                        <span class="list-title">obtain the Grad-CAM positioning</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><span class="bullet"></span>
+                                        <span class="list-title">the point multiplication with the back propagation</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
+<section id="Demo" class="section-bg" style="box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);">
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+                <h3>Demonstration</h3>
+                <p>Right now, let's show you how to use OwlEyes.
+                </p>
+            </header>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-12 col-lg-12" data-aos="zoom-in" data-aos-delay="100">
+
+                    <div class="box">
+                        <p class="stamp">1</p>
+                        <div class="container-fluid justify-content-center text-center demo">
+                            <h4 class="title"><a href="">Navigate to OwlEyes</a></h4>
+                            <p class="description">Click on "Have a try" to use this tool.</p>
+                            <img class="img-fluid demo-image" data-original="/static/img/demo/1.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-12" data-aos="zoom-in" data-aos-delay="100">
+
+                    <div class="box">
+                        <p class="stamp">2</p>
+                        <!-- <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div> -->
+                        <div class="container-fluid text-center demo">
+                            <h4 class="title"><a href="">Use OwlEyes instantly</a></h4>
+                            <p class="description">Click on "Quick Start" to use OwlEyes instantly, then we will show
+                                you three ways to experience our tool.</p>
+                            <img class="img-fluid demo-image" data-original="/static/img/demo/2.png">
+
+                            <p class="description">There are three ways to experience our tool: analyzing example
+                                screenshots, apks, and apk URLs from F-droid website.</p>
+                            <img class="img-fluid demo-image" data-original="/static/img/demo/3.png">
+
+                            <p class="description">Click on one of those screenshots, then we will analyze it
+                                immediately.</p>
+                            <img class="img-fluid demo-image" data-original="/static/img/demo/4.png">
+
+                            <p class="description">In screenshot analysis result section, you can check out the result
+                                of this picture.</p>
+                            <img class="img-fluid demo-image" data-original="/static/img/demo/5.png">
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12 col-lg-12" data-aos="zoom-in" data-aos-delay="100">
+
+                        <div class="box">
+                            <p class="stamp">3</p>
+                            <div class="container-fluid text-center demo">
+                                <!-- <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div> -->
+                                <h4 class="title"><a href="">Use OwlEyes to analyze your own apk</a></h4>
+                                <p class="description">Click on "Analyze your prefered app" to analyze your own apk.
+                                    You can also
+                                    pick an apk link form F-droid website, and we will download it for you.</p>
+                                <img class="img-fluid demo-image" data-original="/static/img/demo/6.png">
+                                <p class="description">You can upload your won apk. And please provide your email
+                                    address.
+                                    When analysis is finished, we will inform you by email with a pdf in it containing
+                                    all of the screenshots and their analysis result.</p>
+                                <img class="img-fluid demo-image" data-original="/static/img/demo/7.png">
+                                <p class="description">You can pick an apk link form F-droid website.</p>
+                                <img class="img-fluid demo-image" data-original="/static/img/demo/8.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <a href="/#Tool" target="_blank" class="btn-get-started">Use OwlEyes</a>
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h3>Team</h3>
+            </div>
+
+            <div class="row justify-content-center" style="width: 100%; margin: 0 auto;">
+
+                <div class="col-md-2" data-aos="zoom-out" data-aos-delay="100">
+                    <div class="member">
+                        <img data-original="/static/img/liuzhe.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Zhe Liu</h4>
+                                <span>Frontend, Backend <br> and Algorithm</span>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2" data-aos="zoom-out" data-aos-delay="100">
+                    <div class="member">
+                        <img data-original="/static/img/yuhui.png" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Yuhui Su</h4>
+                                <span>Frontend, Backend</span>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2" data-aos="zoom-out" data-aos-delay="200">
+                    <div class="member">
+                        <img data-original="/static/img/chunyang.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Chunyang Chen</h4>
+                                <span>Supervisor</span>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2" data-aos="zoom-out" data-aos-delay="300">
+                    <div class="member">
+                        <img data-original="/static/img/junjie.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Junjie Wang</h4>
+                                <span>Supervisor</span>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2" data-aos="zoom-out" data-aos-delay="400">
+                    <div class="member">
+                        <img data-original="/static/img/wangqing.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Qing Wang</h4>
+                                <span>Supervisor</span>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class=" section-bg" style="box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);">
+
+        <div class="container section-bg" data-aos="fade-up">
+
+            <div class="section-header">
+                <h3>Our Collaborators</h3>
+                <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p> -->
+            </div>
+
+            <div class="row g-0 clients-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img data-original="/static/img/logo-School/logo_iscas.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img data-original="/static/img/logo-School/logo_Monash.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img data-original="/static/img/logo-School/logo_ucas.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h3>Contact Us</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 school">
+                    <div style="text-align: center;display: table;height: 100%;" class="schoolimage">
+                        <div style="display: table-cell;margin: 0 auto;text-align: center;vertical-align: middle;">
+                            <img src="/static/img/Iscas.png" data-original="/static/img/Iscas.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row" style="padding-top: 30px;">
+                        <div class="col-md-6 col-6 col-xs-6 info">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>
+                                Institute of Software<br>
+                                Chinese Academy of Sciences<br>
+                                4# South Fourth Street<br>
+                                Zhong Guan Cun<br>
+                                Beijing 100190<br>
+                                P.R. China</p>
+                        </div>
+                        <div class="col-md-6  col-6 col-xs-6">
+                            <div class="info">
+                                <i class="bi bi-envelope"></i>
+                                <p>su.yu.hui@icloud.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form" style="padding-bottom: 30px;">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                           placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group col-lg-6 mt-3 mt-lg-0">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                           placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                       placeholder="Subject" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea style="height: 90px;resize: none;" class="form-control" name="message" rows="5" placeholder="Message"
+                                          required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" title="Send Message">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+</main>
+<!-- End #main -->
+<!--======Modal========-->
+<!-- Vertically centered modal -->
+<div id="screenshotModal" class="modal fade" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Analysis detail</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body screenshots-detail justify-content-center">
+                <div id="original-screenshot" class="item col-md-4 col-sm-3 example-buggy">
+                    <img data-original="" class="img-detail buggy" alt="Image not found!">
+                    <div class="modal-screenshot-text">
+                        <p>Bug Screenshot</p>
+                    </div>
+                </div>
+                <div id="grad-cam-screenshot" class="item col-md-4 col-sm-3 example-buggy">
+                    <img data-original="/static/img/bug-screen/9.jpg" class="img-detail buggy" alt="Image not found!">
+                    <div class="modal-screenshot-text">
+                        <p>Localization Result<br>(Grad-CAM)</p>
+                    </div>
+                </div>
+                {#                <div class="item col-md-4">#}
+                {#                    <div class="infos">#}
+                {#                        <div class="info">#}
+                {#                            <i class="bi bi-envelope"></i>#}
+                {#                            <p>su.yu.hui@icloud.com</p>#}
+                {#                        </div>#}
+                {#                        <div class="info">#}
+                {#                            <i class="bi bi-phone"></i>#}
+                {#                            <p>+61 0450674929</p>#}
+                {#                        </div>#}
+                {#                        <div class="info">#}
+                {#                            <i class="bi bi-phone"></i>#}
+                {#                            <p>+61 0450674929</p>#}
+                {#                        </div>#}
+                {#                        <div class="info">#}
+                {#                            <i class="bi bi-phone"></i>#}
+                {#                            <p>+61 0450674929</p>#}
+                {#                        </div>#}
+                {#                    </div>#}
+                {#                </div>#}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <!-- <h3>NewBiz</h3> -->
+                    <img style="width: 150px;display: block;margin: 0 auto 20px 5px;" data-original="/static/img/logo.png" src="/static/img/loading.png" alt="" class="img-fluid">
+                    <p>OwlEyes is named as our tool is like the owl's eyes to effectively spot UI display issues. And
+                        our
+                        tool
+                        (nocturnal like owl) can complement with conventional automated GUI testing (diurnal like eagle)
+                        for
+                        ensuring the robustness of the UI.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Institute of Software<br>
+                        Chinese Academy of Sciences<br>
+                        4# South Fourth Street<br>
+                        Zhong Guan Cun<br>
+                        Beijing 100190<br>
+                        P.R. China<br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> liuzhe@icloud.com<br>
+                        su.yu.hui@icloud.com<br>
+                    </p>
+
+                    <div class="social-links" style="margin-top: 10px;">
+                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-newsletter">
+                    <h4>About</h4>
+                    <p>The OwlEyes is an open source issues detection tool focusing on UI display issues. On this
+                        website, you
+                        can test applications automatically. If you have any comments and suggestions on our tools,
+                        please give us
+                        feedback. We thank you very much for using our tools.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong>OwlEyes</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="/static/js/jquery.js"></script>
+
+<script src="/static/js/lazyload.js"></script>
+<script src="/static/vendor/aos/aos.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="/static/vendor/php-email-form/validate.js"></script>
+<script src="/static/vendor/purecounter/purecounter.js"></script>
+<script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="/static/js/jquery-ui.js"></script>
+<script src="/static/vendor/sitelogo/js/sitelogo.js"></script>
+<script src="/static/vendor/cropper/js/cropper.js"></script>
+<script src="/static/vendor/socketio/socket.io.js"></script>
+<script src="/static/vendor/sweetalert/sweetalert.js"></script>
+{#<script src="/static/js/from.js"></script>#}
+
+<!-- Template Main JS File -->
+<script src="/static/js/main.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/magnific-popup-options.js"></script>
+<script src="/static/js/owl-eyes.js"></script>
+
+</body>
+
+</html>
